@@ -1750,8 +1750,13 @@ p.pvp55 {
 .item_total ul li span {
     text-align: left;
 }
-
-
+.hero{
+    position: relative;
+}
+a.d-none.hero_txt {
+    display: block !important; 
+    position: absolute; 
+}
 
 
 }

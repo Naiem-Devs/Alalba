@@ -41,8 +41,8 @@ button {
 a {}
 
 a.d-none.hero_txt {
-    display: block !important;
-    position: absolute;
+    /* display: block !important; */
+    /* position: absolute; */
     bottom: 20px;
     font-size: 24px;
     color: #fff;
@@ -997,7 +997,7 @@ ul.footer_nav li a:hover {
 
 
 /* Service Page Start */
-.hero {position: relative;}
+.hero {z-index: 1;}
 .hero_cont {height: 300px;}
 
 .hero_cont img {
