@@ -51,22 +51,19 @@
                             <ul id="nav" class="menu">
                                 <li>
                                     <select>
-                                        <option data-display="es">Nothing</option>
-                                        <option value="1">Some option</option>
-                                        <option value="2">Another option</option>
-                                        <option value="3">disabled option</option>
-                                        <option value="4">Potato</option>
+                                        <option data-display="es">es</option>
+                                        <option value="1">en </option>
+                                        <option value="2">bn </option>
+                                        <option value="3">in </option>
+                                        <option value="4">pk</option>
                                     </select>
                                 </li>
                                 <li><a href="#">Contacto</a></li>
                                 <li id="icon_wrp">
+                                    <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i class="fas fa-search"></i>
+                                    </button>
                                     <a href="#"><i class="fal fa-user-circle"></i></a>
-                                    <div class="search-box">
-                                        <input class="search-txt" type="text" name="" placeholder="Type to Search">
-                                        <a class="search-btn" href="#">
-                                            <i class="fas fa-search"></i>
-                                        </a>
-                                    </div>
                                 </li>
                                 <li><a href="#" class="text-uppercase">comprar</a></li>
                             </ul>
@@ -144,10 +141,33 @@
 
     <main>
 
+
+        <!-- Modal -->
+        <div class="modal fade src_popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Search Now</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <div class="src_box">
+                    <input type="text" placeholder="type...">
+                </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Search</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
         <section class="hero">
             <div class="hero_cont">
                 <img src="assets/img/hero3.png" alt="">
             </div>
+            <a href="#" class="d-none hero_txt">Marcas </a>
         </section>
 
 
@@ -204,115 +224,121 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="letters_top">
-                            <a href="#" class="MARCAS">VER TODAS LAS MARCAS</a>
-                            <ul>
-                                <li><a href="#">a</a></li>
-                                <li><a href="#">b</a></li>
-                                <li><a href="#">c</a></li>
-                                <li><a href="#">d</a></li>
-                                <li><a href="#">e</a></li>
-                                <li><a href="#">f</a></li>
-                                <li><a href="#">g</a></li>
-                                <li><a href="#">h</a></li>
-                                <li><a href="#">i</a></li>
-                                <li><a href="#">j</a></li>
-                                <li><a href="#">k</a></li>
-                                <li><a href="#">l</a></li>
-                                <li><a href="#">m</a></li>
-                                <li><a href="#">n</a></li>
-                                <li><a href="#">o</a></li>
-                                <li><a href="#">p</a></li>
-                                <li><a href="#">q</a></li>
-                                <li><a href="#">r</a></li>
-                                <li><a href="#">s</a></li>
-                                <li><a href="#">t</a></li>
-                                <li><a href="#">u</a></li>
-                                <li><a href="#">b</a></li>
-                                <li><a href="#">w</a></li>
-                                <li><a href="#">x</a></li>
-                                <li><a href="#">y</a></li>
-                                <li><a href="#">z</a></li>
-                            </ul>
+
+                            <button class="btn active MARCAS" onclick="filterSelection('all')"> VER TODAS LAS MARCAS</button>
+                            <div id="myBtnContainer">
+                                <button class="btn" onclick="filterSelection('Adidas')">a </button>
+                                <button class="btn" onclick="filterSelection('Babaria')">b </button>
+                                <button class="btn" onclick="filterSelection('casas')">c </button>
+                                <button class="btn" onclick="filterSelection('dedasd')">d </button>
+                                <button class="btn" onclick="filterSelection('unnon')">e </button>
+                                <button class="btn" onclick="filterSelection('Ferrari')">f </button>
+                                <button class="btn" onclick="filterSelection('Gillette')">G </button>
+                                <button class="btn" onclick="filterSelection('Hanae')">h </button>
+                                <button class="btn" onclick="filterSelection('iuyyu')">i </button>
+                                <button class="btn" onclick="filterSelection('jda')">j </button>
+                                <button class="btn" onclick="filterSelection('kasdad')">k </button>
+                                <button class="btn" onclick="filterSelection('lfsdfsf')">l </button>
+                                <button class="btn" onclick="filterSelection('Mavala')">m </button>
+                                <button class="btn" onclick="filterSelection('ndas')">n </button>
+                                <button class="btn" onclick="filterSelection('Olay')">o </button>
+                                <button class="btn" onclick="filterSelection('pacha')">p </button>
+                                <button class="btn" onclick="filterSelection('qdsd')">q </button>
+                                <button class="btn" onclick="filterSelection('rsr')">r </button>
+                                <button class="btn" onclick="filterSelection('sfdsfs')">s </button>
+                                <button class="btn" onclick="filterSelection('tity')">t </button>
+                                <button class="btn" onclick="filterSelection('Uriage')">u </button>
+                                <button class="btn" onclick="filterSelection('Victor')">v </button>
+                                <button class="btn" onclick="filterSelection('Wella')">w </button>
+                                <button class="btn" onclick="filterSelection('Xerjoff')">x </button>
+                                <button class="btn" onclick="filterSelection('Yves')">Y </button>
+                                <button class="btn" onclick="filterSelection('Zippo')">z </button>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="letters_cont">
-                            <ul>
-                                <li><h6>A</h6></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                                <li><a href="#">Adidas</a></li>
-                            </ul>
-                            <ul>
-                                <h6>B</h6>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                                <li><a href="#">Babaria</a></li>
-                            </ul>
+                            <div class="filterDiv Adidas">
+                                <ul >
+                                    <li><h6>A</h6></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                    <li><a href="#">Adidas</a></li>
+                                </ul>
+                            </div>
+                            <div class="filterDiv Babaria">
+                                <ul >
+                                    <h6>B</h6>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                    <li><a href="#">Babaria</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="letters_cont"><ul>
+                        <div class="letters_cont">
+                        <ul class="filterDiv unnon">
                             <h6>E</h6>
                             <li><a href="#">Ed hardy</a></li>
                             <li><a href="#">Ed hardy</a></li>
@@ -338,7 +364,7 @@
                             <li><a href="#">Ed hardy</a></li>
                             <li><a href="#">Ed hardy</a></li>
                         </ul>
-                        <ul>
+                        <ul class="filterDiv Ferrari">
                             <h6>F</h6>
                             <li><a href="#">Ferrari</a></li>
                             <li><a href="#">Ferrari</a></li>
@@ -348,7 +374,7 @@
                             <li><a href="#">Ferrari</a></li>
                             <li><a href="#">Ferrari</a></li>
                         </ul>
-                        <ul>
+                        <ul class="filterDiv Gillette">
                             <li><h6>G</h6></li>
                             <li><a href="#">Gillette</a></li>
                             <li><a href="#">Gillette</a></li>
@@ -369,7 +395,7 @@
                             <li><a href="#">Gillette</a></li>
                             <li><a href="#">Gillette</a></li>
                         </ul>
-                        <ul>
+                        <ul class="filterDiv Hanae">
                             <li><h6>H</h6></li>
                             <li><a href="#">Hanae Mori</a></li>
                             <li><a href="#">Hanae Mori</a></li>
@@ -378,7 +404,7 @@
                             <li><a href="#">Hanae Mori</a></li>
                             <li><a href="#">Hanae Mori</a></li>
                         </ul>
-                        <ul>
+                        <ul class="filterDiv iuyyu">
                             <li><h6>I</h6></li>
                             <li><a href="#">IkkS</a></li>
                             <li><a href="#">IkkS</a></li>
@@ -391,7 +417,7 @@
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="letters_cont">
-                            <ul>
+                            <ul class="filterDiv Mavala">
                                 <li><h6>M</h6></li>
                                 <li><a href="#">Mavala</a></li>
                                 <li><a href="#">Mavala</a></li>
@@ -424,7 +450,7 @@
                                 <li><a href="#">Mavala</a></li>
                                 <li><a href="#">Mavala</a></li>
                             </ul>
-                            <ul>
+                            <ul class="filterDiv ndas">
                                 <li><h6>N</h6></li>
                                 <li><a href="#">Naf Naf</a></li>
                                 <li><a href="#">Naf Naf</a></li>
@@ -438,7 +464,7 @@
                                 <li><a href="#">Naf Naf</a></li>
                                 <li><a href="#">Naf Naf</a></li>
                             </ul>
-                            <ul>
+                            <ul class="filterDiv Olay">
                                 <li><h6>O</h6></li>
                                 <li><a href="#">Olay</a></li>
                                 <li><a href="#">Olay</a></li>
@@ -449,7 +475,7 @@
                                 <li><a href="#">Olay</a></li>
                                 <li><a href="#">Olay</a></li>
                             </ul>
-                            <ul>
+                            <ul class="filterDiv pacha">
                                 <li><h6>P</h6></li>
                                 <li><a href="#">pacha</a></li>
                                 <li><a href="#">pacha</a></li>
@@ -465,7 +491,7 @@
                     <div class="col-lg-3 col-md-6">
                         
                     <div class="letters_cont">
-                        <ul>
+                        <ul class="filterDiv tity">
                             <li><h6>T</h6></li>
                             <li><a href="#">Tabac</a></li>
                             <li><a href="#">Tabac</a></li>
@@ -483,12 +509,12 @@
                             <li><a href="#">Tabac</a></li>
                             <li><a href="#">Tabac</a></li>
                         </ul>
-                        <ul>
+                        <ul class="filterDiv Uriage">
                             <li><h6>U</h6></li>
                             <li><a href="#">Uriage</a></li>
                             <li><a href="#">Uriage</a></li>
                         </ul>
-                        <ul>
+                        <ul class="filterDiv Victor">
                             <li><h6>V</h6></li>
                             <li><a href="#">Victor</a></li>
                             <li><a href="#">Victor</a></li>
@@ -503,25 +529,25 @@
                             <li><a href="#">Victor</a></li>
                             <li><a href="#">Victor</a></li>
                         </ul>
-                        <ul>
+                        <ul  class="filterDiv Wella">
                             <li><h6>W</h6></li>
                             <li><a href="#">Wella</a></li>
                             <li><a href="#">Wella</a></li>
                             <li><a href="#">Wella</a></li>
                         </ul>
-                        <ul>
+                        <ul class="filterDiv Xerjoff">
                             <li><h6>X</h6></li>
                             <li><a href="#">Xerjoff</a></li>
                         </ul>
-                        <ul>
+                        <ul class="filterDiv Yves">
                             <li><h6>Y</h6></li>
                             <li><a href="#">Yves Saint Laurent</a></li>
                         </ul>
-                        <ul>
+                        <ul class="filterDiv Zippo">
                             <li><h6>Z</h6></li>
                             <li><a href="#">Zippo</a></li>
                         </ul>
-                        <ul>
+                        <ul class="filterDiv ">
                             <li><h6>#</h6></li>
                             <li><a href="#">4711</a></li>
                         </ul>
@@ -1052,6 +1078,7 @@
 
     </main>
 
+
     <footer>
         <div class="container footer_lg">
             <div class="row">
@@ -1147,6 +1174,9 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/Custome.js"></script>
+
+
 
 </body>
 

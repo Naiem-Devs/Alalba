@@ -51,22 +51,19 @@
                             <ul id="nav" class="menu">
                                 <li>
                                     <select>
-                                        <option data-display="es">Nothing</option>
-                                        <option value="1">Some option</option>
-                                        <option value="2">Another option</option>
-                                        <option value="3">disabled option</option>
-                                        <option value="4">Potato</option>
+                                        <option data-display="es">es</option>
+                                        <option value="1">en </option>
+                                        <option value="2">bn </option>
+                                        <option value="3">in </option>
+                                        <option value="4">pk</option>
                                     </select>
                                 </li>
                                 <li><a href="#">Contacto</a></li>
                                 <li id="icon_wrp">
+                                    <button type="button" class="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        <i class="fas fa-search"></i>
+                                    </button>
                                     <a href="#"><i class="fal fa-user-circle"></i></a>
-                                    <div class="search-box">
-                                        <input class="search-txt" type="text" name="" placeholder="Type to Search">
-                                        <a class="search-btn" href="#">
-                                            <i class="fas fa-search"></i>
-                                        </a>
-                                    </div>
                                 </li>
                                 <li><a href="#" class="text-uppercase">comprar</a></li>
                             </ul>
@@ -144,10 +141,33 @@
 
     <main>
 
+
+                <!-- Modal -->
+                <div class="modal fade src_popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search Now</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                        <div class="src_box">
+                            <input type="text" placeholder="type...">
+                        </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Search</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
         <section class="hero">
             <div class="hero_cont">
                 <img src="assets/img/hero2.png" alt="">
             </div>
+            <a href="#" class="d-none hero_txt">Nosortros </a>
         </section>
 
 

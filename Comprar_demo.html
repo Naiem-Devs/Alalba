@@ -36,7 +36,7 @@
                     <div class="menu-area">
                         <nav>
                             <ul id="nav" class="">
-                                <li><a href="#">ir a tienda general</a></li>
+                                <li><a href="#" class="tienda">ir a tienda general</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -51,14 +51,14 @@
                     <div class="menu-area">
                         <nav id="nav2" class="contact_icon">
                             <ul id="nav" class="menu ">
-                                <li><a href="#">Contacto</a></li>
+                                <li><a href="Contact.html">Contacto</a></li>
                                 <li>
-                                    <a href="#" class="user_icon">
+                                    <a href="Paula.html" class="user_icon">
                                         <i class="fal fa-user-alt"></i>
                                         <span>Paula</span>
                                     </a>
                                 </li>
-                                <li><a href="#" class="text-uppercase active" >comprar</a></li>
+                                <li><a href="Comprar.html" class="text-uppercase active" >comprar</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -100,50 +100,52 @@
         <div class="container">
             <div class="row">
                 <div class="header_ctg_wrp hover_w">
-                    <ul>
-                        <li ><a href="#" >todo</a></li>
-                        <li class="wh_active"><a href="#">perfumería</a></li>
-                        <li><a href="#">maquillaje</a></li>
-                        <li><a href="#">cosmética</a></li>
-                        <li><a href="#">peluquería</a></li>
-                        <li>
+                    <ul class="subMenui">
+                        <li ><a href="#" todo="" >todo</a></li>
+                        <li class="wh_active"><a href="#" perfumería="">perfumería</a></li>
+                        <li><a href="#" maquillaje="">maquillaje</a></li>
+                        <li><a href="#" cosmética="">cosmética</a></li>
+                        <li><a href="#" peluquería="">peluquería</a></li>
+                        <li class="wh_deactive">
                             <select>
                                 <option data-display="marcas">Nothing</option>
-                                <option value="1">Some option</option>
-                                <option value="2">Another option</option>
-                                <option value="3">disabled option</option>
+                                <option value="1">Some </option>
+                                <option value="2">Another </option>
+                                <option value="3">disabled </option>
                                 <option value="4">Potato</option>
                             </select>
                         </li>
                     </ul>
-                    <ul>
+                    <ul id="c_demo">
                         <li>
                             <select>
                                 <option data-display="ordenar">Nothing</option>
-                                <option value="1">Some option</option>
-                                <option value="2">Another option</option>
-                                <option value="3">disabled option</option>
+                                <option value="1">Some </option>
+                                <option value="2">Another </option>
+                                <option value="3">disabled </option>
                                 <option value="4">Potato</option>
                             </select>
                         </li>
                         <li class="flt_ic">
-                            <a href="Comprar_blk.html" class="active"><img src="assets/img/flt1.png" alt=""></a> 
-                            <a href="Comprar.html" ><img src="assets/img/flt2.png" alt=""></a>
+                            <a href="Comprar_blk.html" class="active verano"><img src="assets/img/flt1.png" alt=""></a> 
+                            <a href="Comprar.html"  class="verano"><img src="assets/img/flt2.png" alt=""></a>
+                            <a href="#" class="d-none modo" >modo tienda</a>
                         </li>
                         <li class="ftr">
                             <select>
                                 <option data-display="Filter">Nothing</option>
-                                <option value="1">Some option</option>
-                                <option value="2">Another option</option>
-                                <option value="3">disabled option</option>
+                                <option value="1">Some </option>
+                                <option value="2">Another </option>
+                                <option value="3">disabled </option>
                                 <option value="4">Potato</option>
                             </select>
                         </li>
-                        <li>
-                            <a href="#" class="shopping">
+                        <li class="shopping_card">
+                            <a href="order.html" class="shopping">
                                 <i class="far fa-shopping-cart"></i>
                                 <span>25</span>
                             </a>
+                            <a href="order.html" class="or_btn">revisar artículos</a>
                         </li>
                     </ul>
                 </div>
@@ -154,14 +156,50 @@
         <div class="container">
             <div class="row">
                 <div class="hctg_wrp hover_w">
-                    <ul>
+                    <ul class="todo">
                         <li ><a href="#" >todo</a></li>
-                        <li class="wh_active"><a href="#">mujer</a></li>
+                        <li ><a href="#">mujer</a></li>
+                        <li><a href="#">hombre</a></li>
+                        <li><a href="#">infantil</a></li>
+                        <li><a href="#">cofres</a></li>
+                        <li><a href="#">hombre</a></li>
+                        <li><a href="#">nuevo</a></li>
+                    </ul>
+                    <ul class="perfumería">
+                        <li ><a href="#" >todo</a></li>
+                        <li ><a href="#">mujer</a></li>
+                        <li><a href="#">hombre</a></li>
+                        <li><a href="#">infantil</a></li>
+                        <li><a href="#">cofres</a></li>
+                        <li><a href="#">nuevo</a></li>
+                        <li><a href="#">nuevo</a></li>
+                    </ul>
+                    <ul class="maquillaje">
+                        <li ><a href="#" >todo</a></li>
+                        <li ><a href="#">mujer</a></li>
+                        <li ><a href="#">hombre</a></li>
+                        <li><a href="#">infantil</a></li>
+                        <li><a href="#">cofres</a></li>
+                        <li><a href="#">hombre</a></li>
+                        <li><a href="#">nuevo</a></li>
+                    </ul>
+                    <ul class="cosmética">
+                        <li ><a href="#" >todo</a></li>
+                        <li ><a href="#">mujer</a></li>
+                        <li><a href="#">hombre</a></li>
+                        <li ><a href="#">nuevo</a></li>
+                        <li><a href="#">cofres</a></li>
+                        <li><a href="#">accesorios</a></li>
+                        <li><a href="#">nuevo</a></li>
+                    </ul>
+                    <ul class="peluquería">
+                        <li ><a href="#" >todo</a></li>
+                        <li ><a href="#">mujer</a></li>
                         <li><a href="#">hombre</a></li>
                         <li><a href="#">infantil</a></li>
                         <li><a href="#">cofres</a></li>
                         <li><a href="#">accesorios</a></li>
-                        <li><a href="#">nuevo</a></li>
+                        <li><a href="#">hombre</a></li>
                     </ul>
                 </div>
             </div>
@@ -384,7 +422,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="item_ads_img">
+                        <div class="item_ads_img verano">
                             <a href="#" class="btns">ver perfumes de verano</a>
                             <img src="assets/img/ads_i.png" alt="">
                         </div>
@@ -527,9 +565,14 @@
             </div>
         </section>
         
+        <div class="nav_page d-none" id="nav_page_demo">
+            <a href="#"><i class="far fa-chevron-left"></i></a>
+            <p>1 de 20</p>
+            <a href="#"><i class="far fa-chevron-right"></i></a>
+        </div>
 
     </main>
-    <hr class="bdr">
+    <hr class="bdr demo">
     <footer>
         <div class="container footer_lg">
             <div class="row">
@@ -625,6 +668,7 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/Custome.js"></script>
 
 
 </body>

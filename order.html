@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Comprar Sub</title>
+    <title>Order</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="#">
@@ -95,7 +95,7 @@
             </div>
         </div>
     </div>
-    <div class="header_ctg">
+    <div class="header_ctg od_none">
         <div class="container">
             <div class="row">
                 <div class="header_ctg_wrp hover_w">
@@ -138,19 +138,18 @@
                                 <option value="4">Potato</option>
                             </select>
                         </li>
-                        <li class="shopping_card">
-                            <a href="order.html" class="shopping">
+                        <li>
+                            <a href="#" class="shopping">
                                 <i class="far fa-shopping-cart"></i>
                                 <span>25</span>
                             </a>
-                            <a href="order.html" class="or_btn">revisar artículos</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
-    <div class="header_ctg_sub">
+    <div class="header_ctg_sub od_none">
         <div class="container">
             <div class="row">
                 <div class="hctg_wrp hover_w">
@@ -419,21 +418,19 @@
         <section class="list_item">
             <div class="container">
                 <div class="row">
-                    <div class="list_item_top">
-                        <ul>
-                            <li><span>Marca: </span> LANCOME</li>
-                            <li><span>Familia: </span> MUJER</li>
-                        </ul>
-                        <ul>
-                            <li><a href="#">ocultar <p>precio sin IVA</p></a></li>
-                            <span></span>
-                            <li><a href="#">ocultar  <p>precio y dto</p></a></li>
-                        </ul>
-                        <a href="#" class="excel">descargar excel</a>
-                    </div>
                 </div>
             </div>					 	
-            <div class="container_lg container">
+            <div class="container_lg container list_item_order">
+                <div class="row">
+                    <div class="list_item_top">
+                        <h2>resumen pedido</h2>
+                        <ul>
+                            <li><a href="#" class="ocultar">ver con impuestos incluidos</a></li>
+                            <li><a href="#" class="btns">modificar artículos</a></li>
+                        </ul>
+                        <a href="#" class="excel ">descargar excel</a>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="li_blk_menu">
                         <ul class="ean">
@@ -441,602 +438,276 @@
                             <li>producto</li>
                         </ul>
                         <ul>
-                            <li>stock</li>
-                            <li>precio</li>
-                            <li>dto</li>
-                            <li>precio IVA</li>
+                            <li class="text-uppercase">cantidad</li>
+                            <li>pvp</li>
+                            <li>pVU</li>
                         </ul>
                     </div>
-                    <div class="list_item_wrp">
-                        <div class="li_blk txt">
+                    <div class="list_item_wrp ">
+                        <div class="li_blk">
                             <ul>
-                                <li><img src="assets/img/i1.png" alt=""></li>
                                 <li><p>3147758235548</p></li>
-                                <li><a href="#">HYPNOSE EDP VAPO 30 ML</a></li>
+                                <li><a href="#">Chanel pour Monsieur edp vapo 75ml </a></li>
                             </ul>
                             <ul>
                                 <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
                                 <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
+                                <li><p>256,00</p></li>
                             </ul>
                         </div>
                         <div class="li_blk">
                             <ul>
-                                <li><img src="assets/img/i2.png" alt=""></li>
                                 <li><p>3147758235548</p></li>
-                                <li><a href="#">HYPNOSE EDP VAPO 50 ML</a></li>
+                                <li><a href="#">Dior Forever and Ever Dior edt vapo 50ml</a></li>
                             </ul>
                             <ul>
                                 <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
                                 <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" checked="">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
+                                <li><p>256,00</p></li>
                             </ul>
                         </div>
                         <div class="li_blk">
                             <ul>
-                                <li><img src="assets/img/i3.png" alt=""></li>
                                 <li><p>3147758235548</p></li>
-                                <li><a href="#">HYPNOSE EDP VAPO 75 ML</a></li>
+                                <li><a href="#">Dior Rouge Dior Extreme 999 Satin 3,5g</a></li>
                             </ul>
                             <ul>
                                 <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
                                 <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
+                                <li><p>256,00</p></li>
                             </ul>
                         </div>
                         <div class="li_blk">
                             <ul>
-                                <li><img src="assets/img/i4.png" alt=""></li>
                                 <li><p>3147758235548</p></li>
-                                <li><a href="#">IDOLE EDP VAPO 50 ML</a></li>
+                                <li><a href="#">Estée Lauder Double Wear Stay-in-Place Makeup SPF 10 1N2 Ecru 30ml</a></li>
                             </ul>
                             <ul>
                                 <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
                                 <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
+                                <li><p>256,00</p></li>
                             </ul>
                         </div>
                         <div class="li_blk">
                             <ul>
-                                <li><img src="assets/img/i1.png" alt=""></li>
                                 <li><p>3147758235548</p></li>
-                                <li><a href="#">LA VIE EST BELLE EDP VAPO 50 ML</a></li>
+                                <li><a href="#">Estée Lauder Nutritious Super-Pomegranate Radiant Energy Night Creme/Mask 50ml</a></li>
                             </ul>
                             <ul>
                                 <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
                                 <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
+                                <li><p>256,00</p></li>
                             </ul>
                         </div>
                         <div class="li_blk">
                             <ul>
-                                <li><img src="assets/img/i2.png" alt=""></li>
                                 <li><p>3147758235548</p></li>
-                                <li><a href="#">LA VIE EST BELLE EDP VAPO 75 ML</a></li>
+                                <li><a href="#">Katy Perry Killer Queen's Royal Revolution edp vapo 50ml</a></li>
                             </ul>
                             <ul>
                                 <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
                                 <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
+                                <li><p>256,00</p></li>
                             </ul>
                         </div>
                         <div class="li_blk">
                             <ul>
-                                <li><img src="assets/img/i5.png" alt=""></li>
                                 <li><p>3147758235548</p></li>
-                                <li><a href="#">MIRACLE EDP VAPO 30 ML</a></li>
+                                <li><a href="#">Kevin.Murphy Styling Super.Goo 100g</a></li>
                             </ul>
                             <ul>
                                 <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
                                 <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
+                                <li><p>256,00</p></li>
                             </ul>
                         </div>
                         <div class="li_blk">
                             <ul>
-                                <li><img src="assets/img/i4.png" alt=""></li>
                                 <li><p>3147758235548</p></li>
-                                <li><a href="#">Ô LANCOME EDT VAPO 125 ML</a></li>
+                                <li><a href="#">Moroccanoil Finish Luminous Hairspray Strong 330ml</a></li>
                             </ul>
                             <ul>
                                 <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
                                 <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
+                                <li><p>256,00</p></li>
                             </ul>
                         </div>
                         <div class="li_blk">
                             <ul>
-                                <li><img src="assets/img/i6.png" alt=""></li>
                                 <li><p>3147758235548</p></li>
-                                <li><a href="#">POEME EDP VAPO 100 ML</a></li>
+                                <li><a href="#">Paco Rabanne 1 Million deodorant stick 75ml</a></li>
                             </ul>
                             <ul>
                                 <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
                                 <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
+                                <li><p>256,00</p></li>
                             </ul>
                         </div>
                         <div class="li_blk">
                             <ul>
-                                <li><img src="assets/img/i2.png" alt=""></li>
                                 <li><p>3147758235548</p></li>
-                                <li><a href="#">TRESOR A LA FOLIE EDP VAPO 75 ML</a></li>
+                                <li><a href="#">Paco Rabanne Paco edt vapo 100ml</a></li>
                             </ul>
                             <ul>
                                 <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
                                 <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
+                                <li><p>256,00</p></li>
                             </ul>
                         </div>
                         <div class="li_blk">
                             <ul>
-                                <li><img src="assets/img/i7.png" alt=""></li>
                                 <li><p>3147758235548</p></li>
-                                <li><a href="#">TRESOR IN LOVE EDP VAPO 50 ML</a></li>
+                                <li><a href="#">HReplay True Replay for Her edp vapo 20ml</a></li>
                             </ul>
                             <ul>
                                 <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
                                 <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
+                                <li><p>256,00</p></li>
                             </ul>
                         </div>
                         <div class="li_blk">
                             <ul>
-                                <li><img src="assets/img/i4.png" alt=""></li>
                                 <li><p>3147758235548</p></li>
-                                <li><a href="#">TRESOR MIDNIGHT ROSE EDP VAPO 50 ML</a></li>
+                                <li><a href="#">Schwarzkopf Professional BC pH 4.5 Color Freeze Rich Micellar Shampoo 250ml</a></li>
                             </ul>
                             <ul>
                                 <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
                                 <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" checked="">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
+                                <li><p>256,00</p></li>
                             </ul>
                         </div>
                         <div class="li_blk">
                             <ul>
-                                <li><img src="assets/img/i8.png" alt=""></li>
                                 <li><p>3147758235548</p></li>
-                                <li><a href="#">TRESOR MIDNIGHT ROSE EDP VAPO 75 ML</a></li>
+                                <li><a href="#">Yves Saint Laurent Cinema edp vapo 90ml</a></li>
                             </ul>
                             <ul>
                                 <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
                                 <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
+                                <li><p>256,00</p></li>
                             </ul>
                         </div>
-                        <div class="li_blk">
-                            <ul>
-                                <li><img src="assets/img/i8.png" alt=""></li>
-                                <li><p>3147758235548</p></li>
-                                <li><a href="#">HYPNOSE HOMME EDT VAPO 50 ML</a></li>
-                            </ul>
-                            <ul>
-                                <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
-                                <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" >
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
-                            </ul>
+                        <div class="li_blk_last li_blk">
+                            <a href="#" class="btns">añadir más productos</a>
+                            <div class="item_total">
+                                <ul>
+                                    <li>
+                                        <span>Subtotal</span>
+                                        <span>1842,00</span>
+                                    </li>
+                                    <li>
+                                        <span>Impuestos</span>
+                                        <span>450</span>
+                                    </li>
+                                    <li>
+                                        <span class="text-uppercase">total</span>
+                                        <span class="txt_cbg">2.360,00€</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="li_blk">
-                            <ul>
-                                <li><img src="assets/img/i4.png" alt=""></li>
-                                <li><p>3147758235548</p></li>
-                                <li><a href="#">HYPNOSE HOMME EDT VAPO 50 ML</a></li>
-                            </ul>
-                            <ul>
-                                <li><p>7</p></li>
-                                <li><p>70,00</p></li>
-                                <li><p>14</p></li>
-                                <li><p>56,00</p></li>
-                                <li>
-                                    <div class="p_input">
-                                        <a href="#"><i class="far fa-minus"></i></a>
-                                        <input type="text">
-                                        <a href="#"><i class="far fa-plus"></i></a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <label class="containerr">
-                                        <input type="checkbox" checked="">
-                                        <span class="checkmark"></span>
-                                      </label>
-                                </li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                    <div class="cross_btn">
-                        <p>¿necesitas ayuda?</p> <a href="#"> <i class="fal fa-times"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="container d-none " id="ltm">
+            <div class="container d-none item_order_mbl" id="ltm">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="list_item_mobile ">
                             <div class="li_blk_mbl">
-                                <div class="li_blk_img">
-                                    <img src="assets/img/i1.png" alt="">
-                                </div>
                                 <div class="li_blk_cont">
-                                    <h6>HYPNOSE EDP VAPO 30 ML</h6>
+                                    <h6>Chanel pour Monsieur edp vapo 75ml </h6>
                                     <div class="lbc_flx">
                                         <p>ean <span>3147758235548</span></p>
-                                        <p>stock  <span>7</span></p>
                                     </div>
                                     <div class="lbc_flx">
-                                        <p>precio  <span>27,30 </span></p>
-                                        <div class="input_chk">
-                                            <div class="p_input">
-                                                <a href="#"><i class="far fa-minus"></i></a>
-                                                <input type="text">
-                                                <a href="#"><i class="far fa-plus"></i></a>
-                                            </div>
-                                            <label class="containerr">
-                                                <input type="checkbox" checked="">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="lbc_flx">
-                                        <p>dto <span>61,00</span></p>
-                                        <p>precio IVA <span>32,00</span></p>
-                                    </div>
-                                    <div class="lbc_flx">
-                                        <ul>
-                                            <li><a href="#">ocultar <p>precio sin IVA</p></a></li>
-                                            <span></span>
-                                            <li><a href="#">ocultar  <p>precio y dto</p></a></li>
-                                        </ul>
+                                        <p>cantidad  <span>6</span></p>
+                                        <p class="pvp55">pvp <span>55,48</span></p>
                                     </div>
                                 </div>
+                                <a href="#" class="PVU">PVU <span>332,88</span></a>
                             </div>
                             <div class="li_blk_mbl">
-                                <div class="li_blk_img">
-                                    <img src="assets/img/i1.png" alt="">
-                                </div>
                                 <div class="li_blk_cont">
-                                    <h6>HYPNOSE EDP VAPO 30 ML</h6>
+                                    <h6>Chanel pour Monsieur edp vapo 75ml </h6>
                                     <div class="lbc_flx">
                                         <p>ean <span>3147758235548</span></p>
-                                        <p>stock  <span>7</span></p>
                                     </div>
                                     <div class="lbc_flx">
-                                        <p>precio  <span>27,30 </span></p>
-                                        <div class="input_chk">
-                                            <div class="p_input">
-                                                <a href="#"><i class="far fa-minus"></i></a>
-                                                <input type="text">
-                                                <a href="#"><i class="far fa-plus"></i></a>
-                                            </div>
-                                            <label class="containerr">
-                                                <input type="checkbox" checked="">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="lbc_flx">
-                                        <p>dto <span>61,00</span></p>
-                                        <p>precio IVA <span>32,00</span></p>
-                                    </div>
-                                    <div class="lbc_flx">
-                                        <ul>
-                                            <li><a href="#">ocultar <p>precio sin IVA</p></a></li>
-                                            <span></span>
-                                            <li><a href="#">ocultar  <p>precio y dto</p></a></li>
-                                        </ul>
+                                        <p>cantidad  <span>6</span></p>
+                                        <p class="pvp55">pvp <span>55,48</span></p>
                                     </div>
                                 </div>
+                                <a href="#" class="PVU">PVU <span>332,88</span></a>
                             </div>
                             <div class="li_blk_mbl">
-                                <div class="li_blk_img">
-                                    <img src="assets/img/i1.png" alt="">
-                                </div>
                                 <div class="li_blk_cont">
-                                    <h6>HYPNOSE EDP VAPO 30 ML</h6>
+                                    <h6>Chanel pour Monsieur edp vapo 75ml </h6>
                                     <div class="lbc_flx">
                                         <p>ean <span>3147758235548</span></p>
-                                        <p>stock  <span>7</span></p>
                                     </div>
                                     <div class="lbc_flx">
-                                        <p>precio  <span>27,30 </span></p>
-                                        <div class="input_chk">
-                                            <div class="p_input">
-                                                <a href="#"><i class="far fa-minus"></i></a>
-                                                <input type="text">
-                                                <a href="#"><i class="far fa-plus"></i></a>
-                                            </div>
-                                            <label class="containerr">
-                                                <input type="checkbox" checked="">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="lbc_flx">
-                                        <p>dto <span>61,00</span></p>
-                                        <p>precio IVA <span>32,00</span></p>
-                                    </div>
-                                    <div class="lbc_flx">
-                                        <ul>
-                                            <li><a href="#">ocultar <p>precio sin IVA</p></a></li>
-                                            <span></span>
-                                            <li><a href="#">ocultar  <p>precio y dto</p></a></li>
-                                        </ul>
+                                        <p>cantidad  <span>6</span></p>
+                                        <p class="pvp55">pvp <span>55,48</span></p>
                                     </div>
                                 </div>
+                                <a href="#" class="PVU">PVU <span>332,88</span></a>
                             </div>
                             <div class="li_blk_mbl">
-                                <div class="li_blk_img">
-                                    <img src="assets/img/i1.png" alt="">
-                                </div>
                                 <div class="li_blk_cont">
-                                    <h6>HYPNOSE EDP VAPO 30 ML</h6>
+                                    <h6>Chanel pour Monsieur edp vapo 75ml </h6>
                                     <div class="lbc_flx">
                                         <p>ean <span>3147758235548</span></p>
-                                        <p>stock  <span>7</span></p>
                                     </div>
                                     <div class="lbc_flx">
-                                        <p>precio  <span>27,30 </span></p>
-                                        <div class="input_chk">
-                                            <div class="p_input">
-                                                <a href="#"><i class="far fa-minus"></i></a>
-                                                <input type="text">
-                                                <a href="#"><i class="far fa-plus"></i></a>
-                                            </div>
-                                            <label class="containerr">
-                                                <input type="checkbox" checked="">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="lbc_flx">
-                                        <p>dto <span>61,00</span></p>
-                                        <p>precio IVA <span>32,00</span></p>
-                                    </div>
-                                    <div class="lbc_flx">
-                                        <ul>
-                                            <li><a href="#">ocultar <p>precio sin IVA</p></a></li>
-                                            <span></span>
-                                            <li><a href="#">ocultar  <p>precio y dto</p></a></li>
-                                        </ul>
+                                        <p>cantidad  <span>6</span></p>
+                                        <p class="pvp55">pvp <span>55,48</span></p>
                                     </div>
                                 </div>
+                                <a href="#" class="PVU">PVU <span>332,88</span></a>
                             </div>
                             <div class="li_blk_mbl">
-                                <div class="li_blk_img">
-                                    <img src="assets/img/i1.png" alt="">
-                                </div>
                                 <div class="li_blk_cont">
-                                    <h6>HYPNOSE EDP VAPO 30 ML</h6>
+                                    <h6>Chanel pour Monsieur edp vapo 75ml </h6>
                                     <div class="lbc_flx">
                                         <p>ean <span>3147758235548</span></p>
-                                        <p>stock  <span>7</span></p>
                                     </div>
                                     <div class="lbc_flx">
-                                        <p>precio  <span>27,30 </span></p>
-                                        <div class="input_chk">
-                                            <div class="p_input">
-                                                <a href="#"><i class="far fa-minus"></i></a>
-                                                <input type="text">
-                                                <a href="#"><i class="far fa-plus"></i></a>
-                                            </div>
-                                            <label class="containerr">
-                                                <input type="checkbox" checked="">
-                                                <span class="checkmark"></span>
-                                            </label>
-                                            
-                                        </div>
+                                        <p>cantidad  <span>6</span></p>
+                                        <p class="pvp55">pvp <span>55,48</span></p>
+                                    </div>
+                                </div>
+                                <a href="#" class="PVU">PVU <span>332,88</span></a>
+                            </div>
+                            <div class="li_blk_mbl">
+                                <div class="li_blk_cont">
+                                    <h6>Chanel pour Monsieur edp vapo 75ml </h6>
+                                    <div class="lbc_flx">
+                                        <p>ean <span>3147758235548</span></p>
                                     </div>
                                     <div class="lbc_flx">
-                                        <p>dto <span>61,00</span></p>
-                                        <p>precio IVA <span>32,00</span></p>
+                                        <p>cantidad  <span>6</span></p>
+                                        <p class="pvp55">pvp <span>55,48</span></p>
                                     </div>
-                                    <div class="lbc_flx">
-                                        <ul>
-                                            <li><a href="#">ocultar <p>precio sin IVA</p></a></li>
-                                            <span></span>
-                                            <li><a href="#">ocultar  <p>precio y dto</p></a></li>
-                                        </ul>
-                                    </div>
+                                </div>
+                                <a href="#" class="PVU">PVU <span>332,88</span></a>
+                            </div>
+                            <div class="li_blk_last li_blk">
+                                <a href="#" class="btns">añadir más productos</a>
+                                <div class="item_total">
+                                    <ul>
+                                        <li>
+                                            <span>Subtotal</span>
+                                            <span>1842,00</span>
+                                        </li>
+                                        <li>
+                                            <span>Impuestos</span>
+                                            <span>450</span>
+                                        </li>
+                                        <li>
+                                            <span class="text-uppercase">total</span>
+                                            <span class="txt_cbg">2.360,00€</span>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -1047,11 +718,6 @@
                 <div class="row">
                     <div class="item_btm">
                         <a href="#" class="excel">descargar excel</a>
-                        <div class="nav_page">
-                            <a href="#"><i class="far fa-chevron-left"></i></a>
-                            <p>1 de 20</p>
-                            <a href="#"><i class="far fa-chevron-right"></i></a>
-                        </div>
                         <a href="#" class="pedido">finalizar pedido</a>
                     </div>
                 </div>
@@ -1156,7 +822,6 @@
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/Custome.js"></script>
-
 
 </body>
 
